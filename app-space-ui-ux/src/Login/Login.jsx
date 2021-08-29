@@ -1,10 +1,12 @@
 import useSteyles from "./StyleLogin";
 import { Link, Input, Button } from "@material-ui/core";
-
+import MenuSpaceBar from '../Header/Header'
 const Registro = () => {
   const classes = useSteyles();
   return (
+      
     <div className={classes.StyleLoginContainer}>
+        <MenuSpaceBar></MenuSpaceBar>
       <div className={classes.StyleImageBack}></div>
       <div>
         <form className={classes.StyleForm}>

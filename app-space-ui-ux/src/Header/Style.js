@@ -5,7 +5,7 @@ const useSteyles = makeStyles(theme => (({
   LogoConatiner: {
     display: "flex",
     flexDirection: "row",
-    background: "rgba(23, 23, 40, 0.36)",
+    background: "rgba(23, 23, 40, 0.56)",
 
 
    

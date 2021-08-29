@@ -9,11 +9,11 @@ function App() {
   return (
 
     <ThemeProvider theme={theme}>
-      <Login></Login>
-      {/*<Registro></Registro>
-       <BodyCompoent /> 
-      <HomeBody></HomeBody> */}
-    
+       {/*<Login></Login>
+     <Registro*></Registro*/}
+     <BodyCompoent /> 
+      <HomeBody></HomeBody> 
+     
     </ThemeProvider>
 
   );

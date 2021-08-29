@@ -91,7 +91,7 @@ const useSteyles = makeStyles(theme => (({
         fontFamily: 'Roboto',
         fontStyle: 'normal',
         fontWeight: '500',
-        color: 'rgba(0, 0, 0, 0.54)'
+        color: 'rgba(0, 0, 0, 0.44)'
 
     }
 

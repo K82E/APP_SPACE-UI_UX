@@ -8,6 +8,7 @@ import {
 
   
 } from "@material-ui/core";
+import {useState} from "react";
 
 import { AccountCircle } from "@material-ui/icons";
 import Logo from "../asset/LOGO.png";
@@ -15,12 +16,18 @@ import useSteyles from '../Header/Style'
 
 
 
-const MenuSpaceBar = () => {
+const MenuSpaceBar = (props) => {
   const classes = useSteyles();
+
+  const [abrir, setAbrir] =useState(false);
+
+let desplegar = () => {
+  setAbrir(!abrir);
+};
 
   return (
     <div>
-      <AppBar position="fixed" className={classes.LogoConatiner}>
+      <AppBar position="absolute" className={classes.LogoConatiner}>
         <Toolbar>
             <div className={classes.ogoStelyContainer}>
               <img 
@@ -44,10 +51,21 @@ const MenuSpaceBar = () => {
             variant="body1"
             className={classes.StyleHistory}
             >Historia</Typography>
-             <AccountCircle className={classes.AccountStyle}/>
+
+            <IconButton
+             onClick={() => desplegar()}
+             className={classes.AccountStyle}
+
+            >
+             <AccountCircle 
+             
+             />
+             </IconButton>
             </div >
         
-           <div className={classes.StyleContainerLogin} >
+           <div 
+           className={classes.StyleContainerLogin} >
+             
              <Button 
              className={classes.StelyTextContainer}
              variant="contained"

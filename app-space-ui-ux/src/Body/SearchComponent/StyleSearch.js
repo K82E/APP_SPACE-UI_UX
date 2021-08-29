@@ -242,7 +242,7 @@ const useSteyles = makeStyles({
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
-        padding: '32px',
+        padding: '24px',
 
         position: 'static',
         width: '30.55px',

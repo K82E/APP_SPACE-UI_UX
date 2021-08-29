@@ -3,7 +3,7 @@ import {makeStyles,
   } from "@material-ui/core";
 
 
- const useSteyles = makeStyles({
+ const useSteyles = makeStyles(theme => (({
     LogoConatiner: {
       display: "flex",
       flexDirection: "row",
@@ -221,7 +221,80 @@ import {makeStyles,
             order: '1',
             flexGrow: '0',
             margin: '0px 1289px',
+    },
+
+    StyleContainerLogin:{
+
+      display: 'flex',
+      flexDirection: 'column',
+      alignDtems: 'center',
+      padding: '10px',
+
+      position: 'absolute',
+      width: '157.31px',
+      height: '78.7px',
+      left: '1532px',
+      top: '41.15px',
+      background: '#FFFFFF',
+      borderRadius: '10.4615px'
+
+    },
+    StelyTextContainer:{
+
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'center',
+      alignItems: 'flex-start',
+      padding: '6.53846px 0px',
+
+      position: 'static',
+      width: '154.31px',
+      height: '32.69px',
+      left: '10px',
+      top: '42.38px',
+    },
+
+    StelyButtonLogin:{
+      justifyContent: 'center',
+      alignItems: 'flex-start',
+      padding: '6.53846px 13.0769px',
+
+      position: 'static',
+      width: '131.48px',
+      height: '31.38px',
+      left: '21.41px',
+      top: '10px',
+
+      background: '#4B2BA5',
+      borderRadius: '5.23077px',
+
+    },
+    StyleTextButton:{
+      position: 'static',
+      left: '19.67%',
+      right: '19.67%',
+      top: '20.83%',
+      bottom: '20.83%',
+
+      fontFamily: 'Roboto',
+      fontStyle: 'normal',
+      fontWeight: 'bold',
+      fontSize: '10.4615px',
+      lineHeight: '175%',
+      /* identical to box height, or 18px */
+
+      textAlign: 'center',
+      letterSpacing: '0.258923px',
+
+      color: 'rgba(255, 255, 255, 0.87)',
+
+
+      /* Inside Auto Layout */
+
+      flex: 'none',
+      margin: '0px 13.0769px',
+
     }
 
-  });
+  })));
   export default useSteyles;

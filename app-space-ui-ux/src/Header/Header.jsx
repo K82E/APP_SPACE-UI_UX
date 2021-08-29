@@ -3,6 +3,9 @@ import {
   Typography,
   Toolbar,
   IconButton,
+  Button,
+  Link
+
   
 } from "@material-ui/core";
 
@@ -44,7 +47,18 @@ const MenuSpaceBar = () => {
              <AccountCircle className={classes.AccountStyle}/>
             </div >
         
-           
+           <div className={classes.StyleContainerLogin} >
+             <Button 
+             className={classes.StelyTextContainer}
+             variant="contained"
+             color="secondary"
+             ><Typography
+             className={classes.StyleTextButton}
+              >INICIAR SESION</Typography></Button>
+             <div >
+               <Typography >¿No tienes cuenta? <Link href="#">Registrate</Link> </Typography>
+             </div>
+           </div>
          
          
 

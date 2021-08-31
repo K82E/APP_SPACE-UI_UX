@@ -8,7 +8,7 @@ export const loginJWTController = async (req, res) => {
 
   const userData = await getUserDataByEmail(email);
 
-  if(userData !== undefined && password === userData.password){
+  if(userData !== null && password === userData.password){
     const token = jwt.sign({user: email}, secret);
     res.send({
       access_token: token
